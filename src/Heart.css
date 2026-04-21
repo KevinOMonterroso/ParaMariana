@@ -1,0 +1,70 @@
+.heart {
+  width: 100%;
+  height: 914px;
+  position: relative;
+  background-color: #ffbcff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  font-size: 24px;
+  color: #000;
+  font-family: Amaranth;
+}
+.kwang-mathurosemontri-fy1ecb1r {
+  width: 412px;
+  height: 618px;
+  position: absolute;
+  margin: 0 !important;
+  top: 438px;
+  left: 0;
+  background-image: url(/public/kwang-mathurosemontri-fY1ECB1RCd0-unsplash-removebg-preview.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.form-element {
+  width: 326px;
+  height: 504px;
+  position: relative;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  background-color: #ff68ca;
+  border: 4px solid #000;
+  box-sizing: border-box;
+  z-index: 0;
+}
+.el-corazn-representa {
+  width: 272px;
+  height: 432px;
+  position: absolute;
+  margin: 0 !important;
+  top: 39px;
+  left: 25px;
+  line-height: 120%;
+  display: inline-block;
+  z-index: 1;
+}
+.arrow-left-icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+}
