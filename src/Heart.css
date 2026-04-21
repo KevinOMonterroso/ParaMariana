@@ -1,6 +1,6 @@
-.heart {
+﻿.heart {
   width: 100%;
-  height: 914px;
+  height: 100%;
   position: relative;
   background-color: #ffbcff;
   overflow: hidden;
@@ -15,7 +15,10 @@
   font-size: 24px;
   color: #000;
   font-family: Amaranth;
+  flex: 0 0 100vw;
+  min-width: 100vw;
 }
+
 .kwang-mathurosemontri-fy1ecb1r {
   width: 412px;
   height: 618px;
@@ -23,13 +26,14 @@
   margin: 0 !important;
   top: 438px;
   left: 0;
-  background-image: url(/public/kwang-mathurosemontri-fY1ECB1RCd0-unsplash-removebg-preview.png);
+  background-image: url(/src/assets/forHeartImg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   z-index: 0;
   flex-shrink: 0;
 }
+
 .board {
   display: flex;
   flex-direction: column;
@@ -39,6 +43,7 @@
   z-index: 1;
   flex-shrink: 0;
 }
+
 .form-element {
   width: 326px;
   height: 504px;
@@ -46,10 +51,11 @@
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   background-color: #ff68ca;
-  border: 4px solid #000;
+  border: 4px dashed #000;
   box-sizing: border-box;
   z-index: 0;
 }
+
 .el-corazn-representa {
   width: 272px;
   height: 432px;
@@ -61,10 +67,17 @@
   display: inline-block;
   z-index: 1;
 }
-.arrow-left-icon {
+
+.heart .fa-arrow-left {
   width: 50px;
   height: 50px;
-  position: relative;
+  font-size: 40px;
   cursor: pointer;
+  color: #000;
   z-index: 2;
+  position: relative;
+}
+
+.heart .fa-arrow-left:hover {
+  color: #666;
 }

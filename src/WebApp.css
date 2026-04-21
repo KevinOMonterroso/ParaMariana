@@ -1,6 +1,33 @@
+﻿/* Contenedor principal para las páginas */
+.pages-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #ffbcff;
+}
+
+/* Contenedor con scroll horizontal */
+.pages-scroll {
+  display: flex;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Cada página */
+.page {
+  flex: 0 0 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+/* Estilos para WebApp */
 .webapp {
-  width: 100%;
-  height: 914px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   background-color: #ffbcff;
   display: flex;
@@ -15,6 +42,7 @@
   color: #000;
   font-family: Amaranth;
 }
+
 .tomoko-uji-v4bkvol1sti-unsplas {
   width: 408px;
   height: 612px;
@@ -22,12 +50,13 @@
   margin: 0 !important;
   top: 1px;
   left: 2px;
-  background-image: url(/public/tomoko-uji-v4bkVOl1sTI-unsplash-removebg-preview.png);
+  background-image: url(/src/assets/forWebAppImg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   z-index: 0;
 }
+
 .hero {
   align-self: stretch;
   display: flex;
@@ -40,16 +69,18 @@
   color: #000;
   font-family: Amaranth;
 }
+
 .board2,
 .rectangle {
   position: relative;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   background-color: #ff68ca;
-  border: 4px solid #000;
+  border: 4px dashed #000;
   box-sizing: border-box;
   z-index: 0;
 }
+
 .board2 {
   width: 322px;
   height: 232px;
@@ -58,16 +89,19 @@
   align-items: flex-start;
   isolation: isolate;
 }
+
 .rectangle {
   width: 326px;
   height: 236px;
   display: none;
 }
+
 .elige-uno-de,
 .hola-mi-amor {
   line-height: 120%;
   display: inline-block;
 }
+
 .hola-mi-amor {
   width: 272px;
   height: 155px;
@@ -78,10 +112,25 @@
   letter-spacing: -0.04px;
   z-index: 1;
 }
+
 .elige-uno-de {
   margin: 50px 5px;
   width: 100%;
   flex: 1;
   position: relative;
   z-index: 2;
+}
+
+/* Scrollbar */
+.pages-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.pages-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.pages-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 }
