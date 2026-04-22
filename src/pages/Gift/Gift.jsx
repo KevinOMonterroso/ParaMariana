@@ -11,7 +11,7 @@ const Gift = () => {
 
   return (
     <div className="gift">
-      <section className="tulips" />
+      <section className="love" />
       <div className="content__container">
         <div className="board__gift">
           <div className="text__gift">
@@ -24,6 +24,9 @@ const Gift = () => {
             onClick={onArrowLeftIconClick}
           />
         </div>
+        <a href="https://open.spotify.com/track/5GB8RBBzQLojlzQXtABIRp?si=SxmTtVQYR3qMqWhtT5A0oA">
+          ¡Dale click a la sorpresa!
+        </a>
       </div>
     </div>
   );

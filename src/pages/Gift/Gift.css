@@ -18,7 +18,7 @@
   min-width: 100vw;
 }
 
-.tulips {
+.love {
   width: 100%;
   height: 100%;
   display: block;
@@ -26,7 +26,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(/src/assets/forHeartImg.png);
+  background-image: url(/src/assets/love.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -52,21 +52,6 @@
   box-sizing: border-box;
   z-index: 0;
   padding: 25px;
-}
-
-@media (min-width: 768px) {
-  .board__gift {
-    height: 358px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .board__gift {
-    height: 504px;
-  }
-  .tulips {
-    background-position: center;
-  }
 }
 
 .text__gift {
@@ -98,4 +83,22 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.gift .content__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  z-index: 0;
+}
+
+.gift .content__container .a {
+  font-size: 40px !important;
+  color: var(--grey-700);
+  display: inline-block;
+  z-index: 3;
+  color: var(--aqua-500);
 }

@@ -90,3 +90,34 @@
   position: relative;
   z-index: 2;
 }
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buttons-container {
+  width: 390px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.gift-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-button .fa-arrow-up {
+  width: 50px;
+  height: 50px;
+  font-size: 40px !important;
+  cursor: pointer;
+  color: red;
+  z-index: 2;
+  top: 20px;
+}
