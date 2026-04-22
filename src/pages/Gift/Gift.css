@@ -1,4 +1,4 @@
-﻿.heart {
+.gift {
   width: 100vw;
   height: 100dvh;
   position: relative;
@@ -12,8 +12,8 @@
   font-size: var(--fontsize);
   line-height: normal;
   letter-spacing: normal;
-  text-align: justify;
-  font-size: var(--fontsize);
+  text-align: center;
+  font-size: 40px !important;
   flex: 0 0 100vw;
   min-width: 100vw;
 }
@@ -33,7 +33,7 @@
   z-index: 0;
 }
 
-.board__heart {
+.board__gift {
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -48,20 +48,20 @@
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   background-color: var(--pink-300);
-  border: 6px dashed var(--grey-700);
+  border: 4px dashed var(--grey-700);
   box-sizing: border-box;
   z-index: 0;
   padding: 25px;
 }
 
 @media (min-width: 768px) {
-  .board__heart {
+  .board__gift {
     height: 358px;
   }
 }
 
 @media (min-width: 1024px) {
-  .board__heart {
+  .board__gift {
     height: 504px;
   }
   .tulips {
@@ -69,7 +69,7 @@
   }
 }
 
-.text__heart {
+.text__gift {
   min-width: 0;
   height: 100%;
   width: 100%;
@@ -78,7 +78,7 @@
   z-index: 1;
 }
 
-.heart .fa-arrow-left {
+.gift .fa-arrow-left {
   width: 50px;
   height: 50px;
   font-size: 40px;
@@ -88,12 +88,12 @@
   position: relative;
 }
 
-.heart .fa-arrow-left:hover {
+.gift .fa-arrow-left:hover {
   color: var(--aqua-300);
   transition: 0.3s;
 }
 
-.heart .arrow__container {
+.gift .arrow__container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
