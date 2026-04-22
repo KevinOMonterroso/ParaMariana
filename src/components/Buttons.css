@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  -webkit-tap-highlight-color: transparent;
 }
 .buttons-container {
   width: 390px;
@@ -41,7 +42,7 @@
 
 .button :hover {
   transform: scale(1.05);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.3s ease-in;
   background-color: var(--aqua-200);
-  transition: background-color 0.5s ease-in;
+  transition: background-color 0.3s ease-in;
 }
