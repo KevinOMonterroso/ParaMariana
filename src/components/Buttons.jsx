@@ -1,39 +1,45 @@
 ﻿import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import '../Buttons.css';
+import './Buttons.css';
 
 const Buttons = ({ className = '' }) => {
   const navigate = useNavigate();
 
   const onButtonHeartClick = useCallback(() => {
-    navigate('/heart');
+    navigate('pages/Heart/Heart');
   }, [navigate]);
 
   const onButtonSmileClick = useCallback(() => {
-    navigate('/smile');
+    navigate('/pages/Smile/Smile');
   }, [navigate]);
 
   const onButtonClockClick = useCallback(() => {
-    navigate('/clock');
+    navigate('/pages/Clock/Clock');
   }, [navigate]);
 
   return (
-    <div className={`buttons ${className}`}>
-      <div className='buttonheart' onClick={onButtonHeartClick}>
-        <div className='button-shapes' />
-        <div className='heart2'>
-          <i className='fa-solid fa-heart'></i>
-          <button className='base-background' />
+    <div className={`buttons-container ${className}`}>
+      <div className='button' onClick={onButtonHeartClick}>
+        <div className='button-shapes'>
+          <div className='icon'>
+            <i className='fa-solid fa-heart'></i>
+          </div>
         </div>
       </div>
-      <div className='buttonheart' onClick={onButtonSmileClick}>
-        <div className='button-shapes' />
-        <i className='fa-solid fa-face-smile'></i>
+      <div className='button' onClick={onButtonSmileClick}>
+        <div className='button-shapes'>
+          <div className='icon'>
+            <i className='fa-solid fa-face-smile'></i>
+          </div>
+        </div>
       </div>
-      <div className='buttonheart' onClick={onButtonClockClick}>
-        <div className='button-shapes' />
-        <i className='fa-solid fa-clock'></i>
+      <div className='button' onClick={onButtonClockClick}>
+        <div className='button-shapes'>
+          <div className='icon'>
+            <i className='fa-solid fa-clock'></i>
+          </div>
+        </div>
       </div>
     </div>
   );

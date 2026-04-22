@@ -1,33 +1,7 @@
-﻿/* Contenedor principal para las páginas */
-.pages-container {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #ffbcff;
-}
-
-/* Contenedor con scroll horizontal */
-.pages-scroll {
-  display: flex;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-}
-
-/* Cada página */
-.page {
-  flex: 0 0 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  overflow: hidden;
-}
-
-/* Estilos para WebApp */
+﻿/* Estilos para WebApp */
 .webapp {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100dvh;
   position: relative;
   background-color: #ffbcff;
   display: flex;
@@ -38,16 +12,16 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  font-size: 24px;
+  font-size: var(--fontsize);
   color: #000;
   font-family: Amaranth;
 }
 
-.tomoko-uji-v4bkvol1sti-unsplas {
+.plants {
   width: 408px;
   height: 612px;
   position: absolute;
-  margin: 0 !important;
+  margin: 0 ;
   top: 1px;
   left: 2px;
   background-image: url(/src/assets/forWebAppImg.png);
@@ -70,8 +44,7 @@
   font-family: Amaranth;
 }
 
-.board2,
-.rectangle {
+.board {
   position: relative;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -79,58 +52,33 @@
   border: 4px dashed #000;
   box-sizing: border-box;
   z-index: 0;
-}
-
-.board2 {
   width: 322px;
   height: 232px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   isolation: isolate;
+  padding: 25px;
 }
 
-.rectangle {
-  width: 326px;
-  height: 236px;
-  display: none;
-}
-
-.elige-uno-de,
-.hola-mi-amor {
-  line-height: 120%;
+.text__2,
+.text__hero {
+  font-size: var(--fontsize);
+  line-height: 100%;
   display: inline-block;
 }
 
-.hola-mi-amor {
-  width: 272px;
-  height: 155px;
-  position: absolute;
-  margin: 0 !important;
-  top: 38.7px;
-  left: 25px;
+.text__hero{
+  margin: 0 ;
   letter-spacing: -0.04px;
   z-index: 1;
 }
 
-.elige-uno-de {
+.text__2 {
   margin: 50px 5px;
   width: 100%;
-  flex: 1;
   position: relative;
   z-index: 2;
 }
 
-/* Scrollbar */
-.pages-scroll::-webkit-scrollbar {
-  height: 8px;
-}
-
-.pages-scroll::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.pages-scroll::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
