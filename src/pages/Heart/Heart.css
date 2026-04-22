@@ -2,30 +2,26 @@
   width: 100vw;
   height: 100dvh;
   position: relative;
-  background-color: #ffbcff;
+  background-color: var(--pink-100);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   isolation: isolate;
+  font-size: var(--fontsize);
   line-height: normal;
   letter-spacing: normal;
   text-align: justify;
   font-size: var(--fontsize);
-  color: #000;
-  font-family: Amaranth;
   flex: 0 0 100vw;
   min-width: 100vw;
 }
 
 .tulips {
-  /* display: flex; */
-  align-self: self-start;
-  width: 75%;
-  height: 75%;
-
-  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,7 +31,6 @@
   background-repeat: no-repeat;
   background-position: top;
   z-index: 0;
-  flex-shrink: 0;
 }
 
 .board__heart {
@@ -52,8 +47,8 @@
   height: 269px;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-  background-color: #ff68ca;
-  border: 4px dashed #000;
+  background-color: var(--pink-300);
+  border: 4px dashed var(--grey-700);
   box-sizing: border-box;
   z-index: 0;
   padding: 25px;
@@ -61,7 +56,6 @@
 
 @media (min-width: 768px) {
   .board__heart {
-    padding: 20px;
     height: 358px;
   }
 }
@@ -70,17 +64,18 @@
   .board__heart {
     height: 504px;
   }
+  .tulips {
+    background-position: center;
+  }
 }
 
 .text__heart {
   min-width: 0;
-  font-size: var(--fontsize);
   height: 100%;
   width: 100%;
   display: inline-block;
   padding: 25px;
   z-index: 1;
-
 }
 
 .heart .fa-arrow-left {
@@ -88,12 +83,19 @@
   height: 50px;
   font-size: 40px;
   cursor: pointer;
-  color: #000;
+  color: var(--grey-700);
   z-index: 2;
   position: relative;
 }
 
 .heart .fa-arrow-left:hover {
-  color: #666;
+  color: var(--aqua-300);
   transition: 0.3s;
+}
+
+.heart .arrow__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }

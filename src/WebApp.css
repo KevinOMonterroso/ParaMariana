@@ -3,7 +3,7 @@
   width: 100%;
   height: 100dvh;
   position: relative;
-  background-color: #ffbcff;
+  background-color: var(--pink-100);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,21 +13,19 @@
   letter-spacing: normal;
   text-align: center;
   font-size: var(--fontsize);
-  color: #000;
-  font-family: Amaranth;
 }
 
 .plants {
-  width: 408px;
-  height: 612px;
-  position: absolute;
-  margin: 0 ;
-  top: 1px;
-  left: 2px;
+  width: 100%;
+  max-width: 560px;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-image: url(/src/assets/forWebAppImg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
   z-index: 0;
 }
 
@@ -40,7 +38,6 @@
   z-index: 1;
   text-align: justify;
   font-size: 24px;
-  color: #000;
   font-family: Amaranth;
 }
 
@@ -48,18 +45,30 @@
   position: relative;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-  background-color: #ff68ca;
-  border: 4px dashed #000;
+  background-color: var(--pink-300);
+  border: 6px dashed var(--grey-700);
   box-sizing: border-box;
   z-index: 0;
   width: 322px;
-  height: 232px;
+  height: 158px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   isolation: isolate;
   padding: 25px;
+}
+
+@media (min-width: 768px) {
+  .board {
+    height: 215px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .board {
+    height: 252px;
+  }
 }
 
 .text__2,
@@ -69,8 +78,8 @@
   display: inline-block;
 }
 
-.text__hero{
-  margin: 0 ;
+.text__hero {
+  margin: 0;
   letter-spacing: -0.04px;
   z-index: 1;
 }
@@ -81,4 +90,3 @@
   position: relative;
   z-index: 2;
 }
-

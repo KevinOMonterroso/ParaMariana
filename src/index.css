@@ -1,22 +1,49 @@
 :root {
-    --fontsize: 16px;
-    --fontsize-tablet: 20px;
-    --fontsize-desktop: 24px;
+  --fontsize: 16px;
+  --fontsize-tablet: 20px;
+  --fontsize-desktop: 24px;
+
+  --pink-100: #ffeaf5;
+  --pink-200: #ffafde;
+  --pink-300: #ff68ca;
+  --pink-400: #e700ad;
+  --pink-500: #a8007d;
+  --pink-600: #650050;
+  --pink-700: #380028;
+
+  --aqua-100: #68ff9d;
+  --aqua-200: #00d76e;
+  --aqua-300: #00ac57;
+  --aqua-400: #008240;
+  --aqua-500: #005b2b;
+  --aqua-600: #006317;
+  --aqua-700: #001506;
+
+  --grey-100: #f1f0f0;
+  --grey-200: #cac7c9;
+  --grey-300: #a69fa3;
+  --grey-400: #827a7e;
+  --grey-500: #5d575a;
+  --grey-600: #3b3639;
+  --grey-700: #1b191a;
 }
 
 @media (min-width: 768px) {
-    :root {
-        --fontsize: var(--fontsize-tablet);
-    }
+  :root {
+    --fontsize: var(--fontsize-tablet);
+  }
 }
 
 @media (min-width: 1024px) {
-    :root {
-        --fontsize: var(--fontsize-desktop);
-    }
+  :root {
+    --fontsize: var(--fontsize-desktop);
+  }
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  caret-color: transparent;
+  font-family: Amaranth;
+  color: var(--grey-700);
 }

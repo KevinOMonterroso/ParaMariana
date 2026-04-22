@@ -2,55 +2,54 @@
   width: 100%;
   height: 100dvh;
   position: relative;
-  background-color: #ffbcff;
+  background-color: var(--pink-100);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 8px;
-  padding-right: 8px;
+  justify-content: center;
+  font-size: var(--fontsize);
   box-sizing: border-box;
-  isolation: isolate;
-  gap: 0;
   line-height: normal;
   letter-spacing: normal;
   text-align: justify;
-  font-size: 24px;
-  color: #000;
-  font-family: Amaranth;
-  flex: 0 0 100vw;
-  min-width: 412px;
-  min-height: 914px;
 }
 
-
-.figure {
+.board__smile {
+  width: 326px;
+  height: 269px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  background-color: var(--pink-300);
+  border: 6px dashed var(--grey-700);
+  box-sizing: border-box;
   position: relative;
   z-index: 0;
 }
 
-.figure {
-  width: 326px;
-  height: 504px;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  background-color: #ff68ca;
-  border: 6px dashed #000;
-  box-sizing: border-box;
+@media (min-width: 768px) {
+  .board__smile {
+    height: 358px;
+  }
 }
 
-.text{
-  width: 272px;
-  height: 439px;
-  position: absolute;
-  margin: 0 !important;
-  top: 39px;
-  left: 25px;
-  line-height: 120%;
+@media (min-width: 1024px) {
+  .board__smile {
+    height: 504px;
+  }
+}
+
+.text__smile {
+  min-width: 0;
+  height: 100%;
+  width: 100%;
   display: inline-block;
+  padding: 25px;
   z-index: 1;
 }
 
@@ -59,28 +58,36 @@
   height: 50px;
   font-size: 40px;
   cursor: pointer;
-  color: #000;
+  color: var(--grey-700);
   z-index: 2;
   position: relative;
-  margin-top: 20px;
 }
 
 .smile .fa-arrow-left:hover {
-  color: #ffbcff;
-  transition: 100ms;
+  color: var(--aqua-300);
+  transition: 0.3s;
 }
 
 .girasol {
-  width: 395px;
-  height: 592px;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  display: block;
   position: absolute;
-  margin: 0 !important;
-  top: 300px;
-  left: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-17%, -8%);
   background-image: url(/src/assets/forSmileImg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  z-index: 1;
+  z-index: 2;
   flex-shrink: 0;
+}
+
+.smile .arrow__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
